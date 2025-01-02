@@ -1,0 +1,124 @@
+NVIM CMDS
+================================================================================
+
+---------------------------- BASIC NAVIGATION (NORMAL MODE) -----------------------
+h               Move left
+j               Move down
+k               Move up
+l               Move right
+0               Jump to start of line
+$               Jump to end of line
+w               Jump to start of next word
+b               Jump to start of previous word
+e               Jump to end of word
+gg              Go to top of file
+G               Go to bottom of file
+{number}j       Move down {number} lines
+{number}k       Move up {number} lines
+
+------------------------------------ MODES -------------------------------------
+NORMAL MODE:    Default mode for navigation and commands
+
+INSERT MODE:
+i               Enter insert mode at cursor
+I               Enter insert mode at beginning of line
+a               Enter insert mode after cursor
+A               Enter insert mode at end of line
+o               Insert new line below and enter insert mode
+O               Insert new line above and enter insert mode
+ESC/CTRL+[      Exit to normal mode
+
+VISUAL MODE:
+v               Enter visual mode
+V               Enter visual line mode
+CTRL+v          Enter visual block mode
+
+----------------------------------- EDITING -----------------------------------
+COPY/PASTE (YANK):
+yy              Yank (copy) current line
+y               Yank selection (in visual mode)
+p               Paste after cursor
+P               Paste before cursor
+dd              Cut current line
+d               Cut selection (in visual mode)
+
+TEXT OBJECTS:
+vi"             Select text inside quotes
+vi) or vi(      Select text inside parentheses
+vi} or vi{      Select text inside curly braces
+vit             Select text inside XML/HTML tags
+
+----------------------------- SEARCH AND REPLACE ------------------------------
+/pattern        Search forward for pattern
+?pattern        Search backward for pattern
+n               Go to next search result
+N               Go to previous search result
+:%s/old/new/g   Replace all occurrences of 'old' with 'new'
+:%s/old/new/gc  Replace all occurrences with confirmation
+
+------------------------------ FILE OPERATIONS -------------------------------
+SAVING AND QUITTING:
+:w              Save file
+:q              Quit (fails if unsaved changes)
+:q!             Quit without saving (force quit)
+:wq or :x       Save and quit
+:wa             Save all buffers
+
+FILE NAVIGATION:
+LEADER+ff       Search files
+LEADER+sg       Search through codebase (grep)
+:e {filename}   Edit a file
+:Explore        Open file explorer
+LEADER+e        Open file explorer
+
+----------------------------- WINDOW MANAGEMENT ------------------------------
+SPLIT WINDOWS:
+LEADER+|        Split vertically
+CTRL+w v        Split vertically
+CTRL+w s        Split horizontally
+
+WINDOW NAVIGATION:
+CTRL+h          Move to left window
+CTRL+l          Move to right window
+CTRL+j          Move to window below
+CTRL+k          Move to window above
+
+----------------------------- BUFFER MANAGEMENT -----------------------------
+[b              Previous buffer
+]b              Next buffer
+LEADER+bd       Close current buffer
+
+------------------------ LSP (LANGUAGE SERVER PROTOCOL) ---------------------
+LEADER+gd       Go to definition
+K               Show documentation
+LEADER+cf       Format code
+LEADER+ca       Code action
+LEADER+cr       References/refactor
+LEADER+co       Organize imports
+
+-------------------------------- TERMINAL ---------------------------------
+LEADER+ft       Open terminal
+
+-------------------------- FILE EXPLORER OPERATIONS ------------------------
+%               Create new file
+d               Create new directory
+R               Rename file/directory
+D               Delete file/directory
+
+------------------------------- ADDITIONAL TIPS ---------------------------
+WORD WRAP:
+:set wrap       Enable word wrap
+:set nowrap     Disable word wrap
+:set wrap!      Toggle word wrap
+
+UNDO/REDO:
+u               Undo
+CTRL+r          Redo
+
+MISCELLANEOUS:
+.               Repeat last command
+CTRL+g          Show file status
+:set number     Show line numbers
+:set relativenumber  Show relative line numbers
+
+================================================================================
